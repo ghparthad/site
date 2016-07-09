@@ -30,12 +30,12 @@
                             url: "http://88.208.207.22/icici/html-ajax.php",
                             data: "",
                             crossDomain: true,
-                            dataType: 'json',
+                            contentType: "application/json; charset=utf-8",
                             cache: false,
                             success: function(data){ 
-                                $.each(data, function(index, value) {
-                                        $("#php-val").append(value);
-                                });
+								$.each(data, function(index, value) {
+									$("#php-val").append(value);
+								});
                             },
                             error: function(){
                             },
